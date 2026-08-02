@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F7F7F4;
+}
+header{
+    padding: 0 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: #FFFFFF;    
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 55px;
+    height: 52px;
+     align-items: center;    
+ 
+}
+.top img{
+    width: 95px;
+}
+.top ul  {
+   display: flex; 
+   gap:30px;
+   list-style-type: none;
+   padding: 5px 15px;
+   font-family: Courier Georgia ;
+}
+.top ul li{
+    font-family: Courier Georgia,Courier Georgia fall;
+    color: #26251E;
+}
+.btn-1{
+    color:#26251E ;
+    text-decoration: none;
+    margin: 7px;
+}
+.btn-2{
+  color:#26251E ;
+    text-decoration: none;
+    margin:7px;  
+    border:#6e6d68 solid 1px ;
+    border-radius: 20px;
+    padding: 4px 10px;
+}
+.btn-3{
+    color: white ;
+    text-decoration: none;
+    margin: 7px;
+     border:#6e6d68 solid 1px ;
+    border-radius: 20px;
+    padding: 4px 10px;
+    background-color: #26251E;
+}
+.section-1{
+    padding: 150px 20px 65px;
+}
+
+    
+
+.container-1 h1{
+    font-size: 55px;
+    text-align: center;
+    font-weight: 300;
+    font-family: Courier Georgia ;
+}
+.container-1 h1 span{
+    display: block;
+}
+.btns{
+   display: flex;
+   justify-content: center;
+  align-content: center;
+  margin: 20px 0px 40px 0px;
+  gap: 20px;
+}
+.btns-1{
+    padding: 12px 20px 12px;
+     border-radius: 20px;
+     background-color: #26251E;
+     color: #F7F7F4;
+}
+.btns-1 i{
+    background-color: #26251E; 
+}
+.btns-2{
+    padding: 12px 20px 12px;
+     border-radius: 20px;
+     background-color: #E5E5E0;
+     color: #000;
+     opacity: 0.5;
+    
+}
+.btns-2 i{
+opacity: 0.5;
+}
+.container-1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.section-2{
+padding: 0 20px 33px;
+}
+.section-2 h2{
+    text-align: center;
+   font-size: 14px;
+   font-weight: 200px;
+   color: #26251E;
+   opacity: 0.8;
+   font-family: Courier Georgia ;
+}
+.brands{
+    margin: 0 20px;
+}
+.brands h2{
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: large;
+}
+.brands img{
+    width: 100%;
+}
+.section-3{
+  padding:  65px 0;  
+}
+.sub-section-1{
+    padding: 0 20px;
+    background-color: #F2F1ED;
+}
+.two-section-1{
+    padding: 15px;
+    border: #b3b2b0 solid 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-text-1{
+    padding:0 40px 0 0;
+   
+}
+.section-text-1 h3{
+    font-size: 30px;
+    font-weight:200;
+    font-family: Courier Georgia ;
+}
+.section-text-1 p span{
+     font-size: 22px;
+     opacity: 0.5;
+}
+.section-text-1 button{
+    border: none;
+    color: #F54E00;
+     font-size: 15px;
+     margin-top: 10px;
+}
+
+ img{
+    width: 100%;
+}
+.section-text-2{
+    padding:0 0 0 40px;
+}
+.section-text-2 h3{
+    font-size: 30px;
+    font-weight:200;
+    font-family: Courier Georgia ;
+}
+.section-text-2 p span{
+     font-size: 22px;
+     opacity: 0.5;
+}
+.section-text-2 button{
+    border: none;
+    color: #F54E00;
+     font-size: 15px;
+     margin-top: 10px;
+}
+.two-section-2{
+    padding: 15px;
+    border: #b3b2b0 solid 1px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.copy-1{
+   background-color: #EBEAE5;
+   padding: 9px 10px;
+   margin-top: 20px;
+   border-radius: 5px;
+
+}
+.copy-1 span{
+    opacity: 0.5;
+    background-color: #EBEAE5;
+}
+.copy-1 i{
+    background-color: #EBEAE5;
+    padding: 2px 3px;
+}
+.section-4{
+    padding: 67px 20px;
+}
+.section-4 h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 200;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 50px;
+   
+}
+.figures{
+   
+   background-color: #EBEAE5;
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+}
+.figures p{
+    background-color: #EBEAE5;
+    font-size: large;
+}
+.figures-img{
+display: flex;
+gap: 10px;
+background-color: #EBEAE5;
+}
+.figures-img img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 50px;
+    
+}
+.para{
+     margin-top: 50px;
+     background-color: #EBEAE5;
+}
+.opac{
+    opacity: 0.5;
+}
+.section-5{
+    padding: 67px 20px;
+}
+.section-5 h2{
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.card-1{
+    padding: 15px 17px 17px 15px;
+     border: #b3b2b0 solid 1px;
+     border-radius: 10px;
+}
+.card-1 h3{
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.card-1 p{
+    opacity: 0.5;
+    font-size: large;
+}
+.card-1 button{
+     border: none;
+    color: #F54E00;
+     font-size: 15px;
+     margin-top: 20px;   
+}
+.card-1 img{
+    margin-top: 20px;
+}
+.container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.container-3{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    gap: 10px;
+}
+.card-2{
+    padding: 15px 17px 17px 15px;
+     border: #b3b2b0 solid 1px;
+     border-radius: 10px;
+}
+.card-2 .spa{
+    border: #b3b2b0 solid 1px;
+    border-radius: 20px;
+    padding: 4px 5px 4px 5px;
+    color: #b3b2b0;
+}
+ span.sp{
+    opacity: 0.3;
+   padding: 0 0 0 10px;
+}
+.card-2 p{
+    margin-top: 10px;
+    font-size: large;
+}
+ button{
+    border: none;
+    color: #F54E00;
+     font-size: 15px;
+     margin-top: 20px; 
+}
+.container-6{
+     padding: 67px 20px;
+}
+.container-7{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap: 10px;
+}
+ .container-6 h3{
+font-size: 22px;
+font-weight: 200;
+padding: 0 20px 0 0;
+margin:0 0 20px 0;
+}
+.card-3{
+     border: #b3b2b0 solid 1px;
+     border-radius: 10px;
+     padding: 13px 15px 13px 15px;
+}
+.card-3-img{
+    margin-top: 40px;
+}
+.card-3-img img{
+    width: 23px;
+   border-radius: 50%;
+}
+.card-3-img p{
+    display: inline-block;
+    opacity: 0.5;
+}
+ .card-3-text{
+    opacity: 0.5;
+    font-size: 16px;
+ }
+ .card-4-img{
+    margin-top: 10px;
+}
+.card-4-img img{
+    width: 50px;
+   border-radius: 50%;
+}
+.card-4-img p{
+    opacity: 0.5;
+}
+ .card-4-text{
+    opacity: 0.5;
+    font-size: 16px;
+ }
+.container-8{
+    padding: 67px 20px; 
+}
+.last-1 h2{
+   text-align: center;
+   font-size: 72px;
+   font-weight: 300;
+}
+.last-1-btn {
+text-align: center;
+}
+
+.last-1-btn button{
+    background-color: #26251E;
+    color: white;
+    border-radius: 20px;
+    padding: 12px 22px 12px;
+  
+}
+.last-1-btn i{
+    background-color: #26251E;
+}
+.footer-1{
+    padding: 67px 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.footer-text h3{
+font-size: 14px;
+padding-bottom:4px;
+opacity: 0.7;
+}
+.footer-text li{
+    padding: 4px 0;
+    font-size: 14px;
+    list-style-type: none;
+}
+.op-1{
+    padding: 65px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.op-2{
+    opacity: 0.5;
+}
+.op-3{
+display: flex;
+
+}
+.op-4{
+   border-radius: 20px;
+   background-color: #e5e3e0;
+   padding: 5px;
+    margin-right: 15px;
+}
+.op-4 i{
+    background-color: #e5e3e0;
+    padding: 4px;   
+}
+.op-5{
+    text-align: center;
+     background-color: #e5e3e0;
+   padding: 5px;
+    border-radius: 20px;
+}
+.op-5 i{
+    background-color: #e5e3e0;
+    padding: 4px;   
+}
+
+
+
+
+
+
+
