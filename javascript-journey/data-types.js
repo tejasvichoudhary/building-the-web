@@ -75,3 +75,42 @@ const percentage = (firstSubjectMarks, secondSubjectMarks) => {
 
 console.log(`Total Marks: ${totalMarks(firstSubjectMarks, secondSubjectMarks)}`);
 console.log(`Percentage: ${percentage(firstSubjectMarks, secondSubjectMarks)}`);
+
+// Question-5:    WAP to input the length and breath of rectangle and calculate the area and parimeter of rectangle.
+
+const lengthofrectangle = 20;
+const breathofrectangle = 30;
+
+
+const areaofrectangle = (lengthofrectangle,breathofrectangle) =>{
+   return lengthofrectangle * breathofrectangle
+}
+const parimeterofrectangle = (lengthofrectangle,breathofrectangle) =>{
+   return 2 * (lengthofrectangle + breathofrectangle )
+}
+
+console.log(`Area of rectangle : ${areaofrectangle(lengthofrectangle,breathofrectangle)}`)
+console.log(`Parimeter of rectangle : ${parimeterofrectangle(lengthofrectangle,breathofrectangle)}`)
+
+// Question-6:    WAP to input n numbers and log the average of those number.
+
+// Beginner  code
+const numbers = [10,40,40,60,80,90];
+
+const average = (numbers) =>{
+   let sum = 0;
+   for(let i= 0; i < numbers.length; i++){
+      sum = sum + numbers.length[i];
+   }
+   return sum / numbers.length;
+}
+// Professional code
+const average = (numbers) => {
+   let sum = 0;
+   numbers.forEach(number => {
+    sum += number 
+   })
+   return sum / numbers.length;
+}
+// Question-7:    WAP to input the distance between two cities (in km) , convert and print this distance in meter, feet, inches, and centimeter.
+
