@@ -114,3 +114,59 @@ const average = (numbers) => {
 }
 // Question-7:    WAP to input the distance between two cities (in km) , convert and print this distance in meter, feet, inches, and centimeter.
 
+const distanceBetweenTwoCities = 50;
+
+const convertCitiesDistanceIntoMeter = (distanceBetweenTwoCities) => {
+   return distanceBetweenTwoCities * 1000;
+}
+const convertCitiesDistanceIntoFeet  = (distanceBetweenTwoCities) => {
+   return distanceBetweenTwoCities * 3280.84;
+}
+const convertCitiesDistanceIntoInches = (distanceBetweenTwoCities) => {
+   return distanceBetweenTwoCities * 39370.1;
+}
+const convertCitiesDistanceIntoCentimeter = (distanceBetweenTwoCities) => {
+   return distanceBetweenTwoCities * 100000;
+}
+console.log(`Distance in Meter:  ${convertCitiesDistanceIntoMeter(distanceBetweenTwoCities)}`)
+console.log(`Distance in Feet:  ${convertCitiesDistanceIntoFeet(distanceBetweenTwoCities)}`)
+console.log(`Distance in Inches: ${convertCitiesDistanceIntoInches(distanceBetweenTwoCities)}`)
+console.log(`Distance in Centimeter: ${convertCitiesDistanceIntoCentimeter(distanceBetweenTwoCities)}`)
+
+// Question-8:    WAP to input the temperature in Fahrenheit and convert this temperature in Centigrade.
+
+const temperatureInFahrenheit = 20;
+
+const convertTemperatureIntoCentigrade = (temperatureInFahrenheit) => {
+   return  (temperatureInFahrenheit - 32) * 5 / 9;
+}
+console.log(`Temperature in Centigrade:  ${convertTemperatureIntoCentigrade(temperatureInFahrenheit)}`)
+
+// Question-9:    Input the quantity and rate of a product then calculate the amount. A discount of 10 % after then calculate discount amount and amount after discount.
+
+const quantity = 5;
+const rate = 100;
+
+const calculateAmount = (quantity,rate) => {
+   return quantity * rate;
+}
+const calculateDiscountAmount = (quantity,rate) => {
+   return calculateAmount(quantity,rate) * 10 / 100;
+}
+const calculateAmountAfterDiscount = (quantity,rate) => {
+   return calculateAmount(quantity,rate) - calculateDiscountAmount(quantity,rate)
+}
+console.log(` Amount : ${calculateAmount(quantity,rate)}`)
+console.log(`Discount Amount: ${calculateDiscountAmount(quantity,rate)}`)
+console.log(`Amount After Discount: ${calculateAmountAfterDiscount(quantity,rate)}`)
+
+// Question-10:    Input principal amount, input rate of interest, input number of years, Then Calculate simple interest.
+
+const principalamount = 20;
+const rateofinterst = 10;
+const numberofyears = 2;
+ 
+const simpleinterst = (principalamount,rateofinterst,numberofyears) => {
+   return (principalamount * rateofinterst * numberofyears) / 100
+}
+console.log(`Simple Interest: ${simpleinterst(principalamount,rateofinterst,numberofyears)}`)
