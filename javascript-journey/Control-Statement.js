@@ -43,6 +43,7 @@ else if (marks <= 50) console.log("F");
 
 // Question-4:   WAP to check  time of day based on the current hour. For example, if it's before noon, log "Good morning.". (take time as an input).
 
+// first way
 const time = 6;
 
 if (time >= 0 && time < 12) {
@@ -50,11 +51,111 @@ if (time >= 0 && time < 12) {
 } else if (time >= 12 && time < 16 ) {
     console.log("Good afternoon India")
 }else if (time >= 16 && time < 20 ) {
-    console.log("Good afternoon India")
+    console.log("Good Evening India")
 }   else if (time >= 20 && time <= 24) {
     console.log("Good night india")
 } else {
     console.log("invalid time")
 }
+    // second way 
+    if (time >= 0 && time < 12)  console.log("Good morning India");
+    else if (time >= 12 && time < 16 ) console.log("Good afternoon India");
+    else if (time >= 16 && time < 20) console.log("Good nignt india");
+    else if (time >= 20 && time <= 24) console.log("Good night india");
+    else console.log("Invalid Time");
+
+    // Question-5:   WAP using Switch-case to display day name according to number, for eg: 1 => Sunday. (take a number as input).
+
+    const day = 3;
+
+    switch (day) {
+        case 1:
+           console.log("Sunday") 
+            break;
+        case 2:
+            console.log("Monday")    
+            break;
+        case 3:
+            console.log("Tuesday")    
+            break;
+         case 4:
+            console.log("Wednesday")    
+            break; 
+            case 5:
+            console.log("Thursday")    
+            break;  
+            case 6:
+            console.log("Friday")    
+            break;  
+            case 7:
+            console.log("Saturday")    
+            break;    
+        default:
+            console.log("Invalid Day")
+            break;
+    }
+    // Question-6:   WAP using Switch-case to display month name according to number, for eg: 1 => January. (take a number as input).
+
+    const Month = 2;
+
+    switch(Month){
+        case 1:
+            console.log("January");
+            break;
+        case 2:
+            console.log("Feburary");
+            break;
+        case 3:
+            console.log("March");
+            break;
+        case 4:
+            console.log("April");
+            break;
+        case 5:
+            console.log("May");
+            break;
+        case 6:
+            console.log("June");
+            break;
+        case 7:
+            console.log("July");
+            break;
+        case 8:
+            console.log("August");
+            break;
+        case 9:
+            console.log("September");
+            break;
+        case 10:
+            console.log("October");
+            break;
+        case 11:
+            console.log("November");
+            break;
+        case 12:
+            console.log("December");
+            break;
+        default:
+            console.log("Invalid Month");
+            break;  
+    }
+    // Question-7:   Implement a switch case statement to determine the type of fruit based on a variable. Handle at least three different fruit options.
+
+    let fruit = "apple";
    
- 
+    switch(fruit){
+        case "apple":
+            console.log("apple");
+            break;  
+            case "mango":
+            console.log("mango");
+            break; 
+            case "banana":
+            console.log("banana");
+            break; 
+            default:
+                console.log("Invalid Fruit")      
+        }
+        // Question-8:   WAP to categorize a given temperature into "low," "medium," or "high" ranges.
+
+        
