@@ -156,6 +156,44 @@ if (time >= 0 && time < 12) {
             default:
                 console.log("Invalid Fruit")      
         }
-        // Question-8:   WAP to categorize a given temperature into "low," "medium," or "high" ranges.
+    // Question-8:   WAP to categorize a given temperature into "low," "medium," or "high" ranges.
 
-        
+    const temperature = 20;
+
+    if(temperature >= 0 && temperature <= 50){
+        console.log("it is low");
+    } else if (temperature >= 51 && temperature <= 90 ){
+        console.log("it is medium");
+    } else if (temperature >= 91 && temperature <= 120){
+        console.log("it is high");
+    } else {
+        console.log("Invalid temperature");
+    }
+
+    // Question-9:   WAP that classifies a number as positive, negative, even, or odd.
+
+    const classifiesnumber = 3;
+    
+    if (classifiesnumber < 0 && classifiesnumber % 2 == 0){
+        console.log("Negitive and even")
+    } else if (classifiesnumber >= 0 && classifiesnumber % 2 == 0 ){
+        console.log("positive and even")
+    } else  if (classifiesnumber < 0 && classifiesnumber % 2 == -1){
+        console.log("negitive and odd")
+    }else if (classifiesnumber >= 0 && classifiesnumber % 2 == 1 ){
+        console.log("positive and odd")
+    } else {
+            console.log("Invalid number")
+    }
+      // Question-10:  WAP to validate a username. If the username is less than 6 characters, log "Username too short"; if it's more than 15 characters, log "Username too long"; otherwise, log "Username accepted."
+
+      const user = "abc";
+
+      if (user.length < 6){
+        console.log("Username too short")
+      } else if ( user.length > 15 ){
+        console.log("User too long")
+      } else {
+        console.log("Username accepted")
+      }
+
