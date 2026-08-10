@@ -43,11 +43,32 @@ let operator = 20;
  operator = operator + 5;
  console.log("operator");
 
- let num = 10;
+ let num = 30;
  let num2 = 20;
 
  num = num2;
  console.log(num); // it will be 20 it will overwrite 10 in num.
+
+// second method
+
+ console.log(num);
+ num += 10;
+
+ console.log(num);
+ num -= 10;
+
+ console.log(num);
+ num /= 10;
+
+ console.log(num);
+ num *= 10;
+
+ console.log(num);
+ num **= 2;
+
+ console.log(num);
+ num %= 10;
+
 
  // Problem 3: Write a JavaScript program to compare two numbers and log whether they are equal, greater, or lesser.
 
@@ -74,4 +95,34 @@ if (a > b){
 
 // Problem 4: Write a JavaScript program to demonstrate logical operators in a conditional statement.
 
+let um = parseInt(prompt("Enter the firstnum"));
+let be = parseInt(prompt("enter the secondnum"));
+
+if(um > 20 && um < 29){
+    console.log("Both numbers are positive");
+} else if (um > 30 || um < 40){
+    console.log("Atleast one number is positive")
+} else {
+    console.log("Both numbers are negative")
+}
+
+// Problem 5: Write a JavaScript program to perform bitwise operations on two numbers.
+ let a = 20;
+ let b = 30;
+
+ console.log(a & c);
+
+ console.log(a | b);
+
+ console.log(a ^ b);
+
+ console.log(~a);
+
+ console.log(b << 2);
+
+console.log(b >> 2);
+
+console.log(b >>> 2);
+
+// Problem 6: Write a JavaScript program to use the ternary operator to determine the larger of two numbers.
 
