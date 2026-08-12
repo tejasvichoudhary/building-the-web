@@ -151,8 +151,47 @@ console.log(typeof { name: "Aman" });
 
 console.log(typeof function () { });
 
-//  new
+//  new to see
 
 console.log(typeof new Date());
 
 console.log(typeof new Error());
+
+// Problem 8: Write a JavaScript program to use string operators to concatenate two strings.
+
+let firstname = "tejasvi";
+let secondname = "choudhary";
+
+console.log(firstname + secondname);
+
+console.log(firstname += secondname);
+
+// Problem 9: Write a JavaScript program to demonstrate the use of the typeof operator on different variables.
+
+let a;
+console.log(typeof (a));  
+
+let number = 1;
+console.log(typeof (number));
+
+let string = "hello";
+console.log(typeof (string));
+
+let x = {}
+console.log(typeof (x));
+
+let y = [];
+console.log(typeof (y));
+
+// Problem 10: Write a JavaScript program to use the in operator to check if a property exists in an object.
+
+const student = {
+    name : "tejasvi",
+    age : 20,
+   city : "dehradun",
+};
+console.log("name" in student);
+
+console.log("age" in student);
+
+console.log("city" in student);
