@@ -28,3 +28,24 @@ const greeting = (time) => {
 }
 
 greeting(10);
+
+// Question-4:  Write a function that calculates and returns the area of a rectangle. The function should take the length and width as parameters.
+
+// What I learn
+function areaRect(length, width) {
+if (typeof length !== 'number' || length < 0) {
+throw new Error("Sorry number is length is invalid");
+}
+if (typeof width !== 'number' || width < 0) {
+throw new Error("Sorry width is invalid :(");
+}
+
+let area = length * width;
+return area;
+}
+try {
+let result = areaRect(3,num);
+console.log(result);
+} catch (error) {
+console.error('Error:', error.message);
+}
