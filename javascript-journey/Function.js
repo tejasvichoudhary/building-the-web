@@ -49,3 +49,31 @@ console.log(result);
 } catch (error) {
 console.error('Error:', error.message);
 }
+
+// Question-5:  Write a function that takes a base and an exponent as parameters and returns the result of raising the base to the exponent.
+
+const expo = ( base, exponent) => {
+return ((base ** exponent));
+}
+console.log(expo(20,2));
+
+//Second type to check the number
+
+function powerCalculate (base, exponenet) {
+if (typeof base !== 'number' || base < 0) {
+throw new Error('Only number and base > zero');
+}
+if (typeof exponenet !== 'number' || exponenet < 0){
+throw new Error('Exponenet only can be number greater than zero');
+}
+
+let power = base ** exponenet;
+return power;
+}
+
+try {
+let powerResult = powerCalculate(3,5);
+console.log(powerResult);
+} catch (error){
+console.error('Error:', error.message);
+}
