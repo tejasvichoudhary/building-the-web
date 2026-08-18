@@ -77,3 +77,20 @@ console.log(powerResult);
 } catch (error){
 console.error('Error:', error.message);
 }
+
+// Question-6:  Write a function that takes a number as a parameter and returns true if it's a prime number and false otherwise.
+
+function isPrime(number) {
+if (number < 2) {
+return false;
+} 
+for (let i = 2; i <= Math.sqrt(number); i++){
+if (number % i == 0) {
+return false;
+}
+return true;
+}
+}
+
+let result = isPrime(5);
+console.log(result);
