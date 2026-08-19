@@ -94,3 +94,30 @@ return true;
 
 let result = isPrime(5);
 console.log(result);
+
+// Question-7:  Write a function that has a local variable and another function that has a global variable. Demonstrate the difference between global and local scope.
+
+const globalvariable = 20;
+ 
+const variables = () => {
+    let localvariable = 10;
+    console.log(`i am the global ${globalvariable}`);
+
+    console.log(`i am the local ${localvariable}`);
+}
+ variables ();
+
+console.log(`i am the global  ${globalvariable}`);
+
+// Question-8:  Write a function that returns another function. The inner function should have access to a variable from the outer function.
+
+const outerfunction = () => {
+    const outervariable = 20;
+    const innerfunction = () => {
+        console.log(`Outer variable : ${outervariable}`)
+    }
+    return innerfunction
+}
+
+const result = outerfunction()
+result();
