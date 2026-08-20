@@ -121,3 +121,28 @@ const outerfunction = () => {
 
 const result = outerfunction()
 result();
+
+// Question-9:  Write a recursive function to calculate the factorial of a given number.
+
+ const factorial = (n) => {
+    if (n === 0)  {
+    return 1;
+    }
+    console.log(n)
+    return n * factorial(n - 1)
+ }
+
+ console.log(factorial(5))
+
+//  Question-10: Write two functions, and then compose them into a third function. For example, if f(x) = x + 2 and g(x) = 2x, then the composed function should be h(x) = f(g(x)).
+
+const firstfunction = (a) => {
+   return a + 2
+}
+const secondfunction = (x) => {
+    return 2 * x ;
+}
+const composedfunction = (x) => {
+    return firstfunction(secondfunction(x))
+}
+console.log(composedfunction(22));
