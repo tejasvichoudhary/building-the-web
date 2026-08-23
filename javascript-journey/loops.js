@@ -208,3 +208,59 @@ while (q <= 30) {
     q++;
 }
 
+// Question-10: WAP to identify and log prime numbers within a given range.
+
+// It take lot of time to understand
+
+for (let i = 2; i < 100; i++) {
+    let prime = true;
+
+    for (let j = 2; j < i; j++) {
+        
+    if(i % j === 0) {
+        prime = false;
+    } 
+        }
+    if(prime){
+        console.log(i)
+    }        
+}
+
+let r = 2;
+range = 100;
+
+while (r <= range) {
+    let isPrime = true;
+    let s = 2;
+    while (s < r) {
+        if (r % s === 0) {
+            isPrime = false;
+        }
+        s++;
+    }
+    if (isPrime) {
+        console.log(r);
+    }
+    r++;
+}
+
+// Pattern Printing Problems
+
+
+// Question-1: 
+
+// WAP to print this
+
+// *
+// **
+// ***
+// ****
+// *****    
+
+let star = "";
+
+for (let index = 1; index <= 5; index++) {
+    star = star + "*";
+  console.log(star);
+    
+}
