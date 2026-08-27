@@ -107,11 +107,32 @@ const ary = [1, 2 ,2, 3, 4, 4, 5];
 
 let unique = [];
 
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
+for (let index = 0; index < ary.length; index++) {
+   unique.includes(ary[index])
+   if (unique.includes(ary[index]) === false )
+    unique.push(ary[index])
+    
+}
+console.log(unique);
+
+// Q10 — Positive aur Negative Numbers ko separate karo const arr = [-2, 5, -7, 8, -1, 4].
+
+const aryy = [-2, 5, -7, 8, -1, 4];
+
+let positive = [];
+let negative = [];
+
+for (let index = 0; index < aryy.length; index++) {
+    if(aryy[index] >= 0){
+        positive.push(aryy[index])
+    } {
+        negative.push(aryy[index])
+    }
     
 }
 
+console.log(positive);
+console.log(negative);
 
 
 
