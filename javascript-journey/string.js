@@ -34,5 +34,8 @@ let strrr = "   I love JavaScript   ";
 
 strrr.trim().replace("JavaScript", "JS");
 
+//  Q6. Write a JavaScript program to count the total number of vowels (a, e, i, o, u) present in the given string. Use a for loop.
+
+let stri = "JavaScript";
 
 
