@@ -37,5 +37,61 @@ strrr.trim().replace("JavaScript", "JS");
 //  Q6. Write a JavaScript program to count the total number of vowels (a, e, i, o, u) present in the given string. Use a for loop.
 
 let stri = "JavaScript";
+let count = 0;
+
+for (let index = 0; index < stri.length; index++) {
+     let vowels = "aeiou";
+    if (vowels.includes(stri[index]) ){
+        count++
+    }
+}
+console.log(count)
+
+// Q7. Write a JavaScript program to reverse a given string without using the reverse() method.
+
+let strii = "hello";
+let rev = "";
+
+for (let index = strii.length - 1; index >= 0; index--) {
+    rev =  rev + strii[index];
+
+    
+}
+
+console.log(rev)
+
+// Q8. Write a JavaScript program to check whether a given string reads the same forward and backward. If it does, print "Palindrome"; otherwise, print "Not Palindrome".
+
+let strin = "madam";
+let reve = "";
+
+for (let index = strin.length - 1; index >= 0; index--) {
+    reve =  reve + strin[index];
+}
+    if(reve === strin){
+        console.log("palindrome")
+    } else {
+        console.log("not palindrome")
+    }
+
+// Q9. Write a JavaScript program to count how many times each character occurs in the given string and display the frequency of each character.
+
+let string = "banana";
+let frequency = {};
+
+for (let index = 0; index < string.length; index++) {
+    let currentChar = string[index];
+
+    if (currentChar in frequency) {
+        frequency[currentChar]++;
+    } else {
+        frequency[currentChar] = 1;
+    }
+}
+
+console.log(frequency);
+
+
+
 
 
