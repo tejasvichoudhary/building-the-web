@@ -91,7 +91,23 @@ for (let index = 0; index < string.length; index++) {
 
 console.log(frequency);
 
+// Q10. Write a JavaScript program to count the total number of words in a given sentence and find the longest word in that sentence.
 
+let stringg = "I love learning JavaScript";
 
+let array = stringg.split(" ");
 
+console.log("Total words:", array.length);
 
+let longest = "";
+
+for (let index = 0; index < array.length; index++) {
+
+    let element = array[index];
+
+    if (element.length > longest.length) {
+        longest = element;
+    }
+}
+
+console.log("Longest word:", longest);
