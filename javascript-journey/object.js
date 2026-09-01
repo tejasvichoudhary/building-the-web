@@ -48,4 +48,60 @@ const obj = {
     course: "JavaScript"
 };
 
+let keys = Object.keys(obj);
+
+for (let index = 0; index < keys.length; index++) {
+    const element = keys[index];
+    console.log(element)
+    
+}
+
+// Q5. Given an object containing different properties, print each key along with its value using a loop.
+
+const usser = {
+    name: "Aman",
+    age: 21,
+    city: "Delhi",
+    course: "JavaScript"
+};
+
+let keyss = Object.keys(usser);
+
+for (let index = 0; index < keyss.length; index++) {
+    const element = keyss[index];
+
+    console.log( element, ":" ,usser[element])
+    
+}
+
+// Q6. Given an object containing marks of three subjects, calculate and print the total marks.
+
+const marks = {
+    maths: 80,
+    physics: 75,
+    chemistry: 90
+};
+
+for (let index = 0; index < marks.length; index++) {
+    const element = marks[index];
+    element += marks[index]
+    
+}
+console.log(element)
+Q7.
+
+Given an object containing marks of multiple subjects, find and print the subject with the highest marks and its marks.
+
+Q8.
+
+Given an object containing name, age, and city, check whether a property named email exists in the object.
+
+Q9.
+
+Create an object containing a student's name, age, and an array of subjects. Access the array, print one subject, and modify one subject in the array.
+
+Q10. ⭐
+
+Given an array of student objects, where each student has a name and marks, find and print the student who has the highest marks.
+
 
