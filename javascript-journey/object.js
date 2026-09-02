@@ -82,26 +82,52 @@ const marks = {
     chemistry: 90
 };
 
-for (let index = 0; index < marks.length; index++) {
-    const element = marks[index];
-    element += marks[index]
+let val = object.values(marks);
+let total = 0;
+
+for (let index = 0; index < val.length; index++) {
+    const element = val[index];
+    total += val[index]
     
 }
-console.log(element)
-Q7.
+console.log(total)
 
-Given an object containing marks of multiple subjects, find and print the subject with the highest marks and its marks.
 
-Q8.
+// Q7. Given an object containing marks of multiple subjects, find and print the subject with the highest marks and its marks.
 
-Given an object containing name, age, and city, check whether a property named email exists in the object.
+const maarks = {
+    maths: 80,
+    physics: 95,
+    chemistry: 88,
+    english: 72
+};
 
-Q9.
+let key = Object.keys(maarks);
+let highest = 0;
+let highestsubject = "";
 
-Create an object containing a student's name, age, and an array of subjects. Access the array, print one subject, and modify one subject in the array.
+for (let index = 0; index < key.length; index++) {
+    const element = key[index];                         
+    if (maarks[element] > highest ) {
+        highest = maarks[element];
+        highestsubject = element;
+    } 
+    
+}
+console.log(highestsubject)
+console.log(highest)
 
-Q10. ⭐
+// Q8. Given an object containing name, age, and city, check whether a property named email exists in the object.
 
-Given an array of student objects, where each student has a name and marks, find and print the student who has the highest marks.
+const userr = {
+    name: "Aman",
+    age: 21,
+    city: "Delhi",
+    course: "JavaScript"
+};
+
+// Q9. Create an object containing a student's name, age, and an array of subjects. Access the array, print one subject, and modify one subject in the array.
+
+// Q10. Given an array of student objects, where each student has a name and marks, find and print the student who has the highest marks.
 
 
