@@ -126,8 +126,41 @@ const userr = {
     course: "JavaScript"
 };
 
+let exists = object.keys(userr)
+let found = false;
+
+for (let index = 0; index < exists.length; index++) {
+    const element = exists[index];
+
+    if(element === "email"){
+        found = true;
+    }
+}
+    if(found === true){
+    console.log(`Print exists`)
+} else {
+    console.log(`Does not exist`)
+}
+
 // Q9. Create an object containing a student's name, age, and an array of subjects. Access the array, print one subject, and modify one subject in the array.
+
+const sttudent = {
+    name: "Rahul",
+    age: 20,
+    subjects: ["JavaScript", "HTML", "CSS"]
+};
+
+console.log(sttudent.subjects[1]);
+
+student.subjects[1] = "Node.js";
+
 
 // Q10. Given an array of student objects, where each student has a name and marks, find and print the student who has the highest marks.
 
+const students = [
+    { name: "Rahul", marks: 78 },
+    { name: "Aman", marks: 92 },
+    { name: "Rohit", marks: 85 },
+    { name: "Karan", marks: 88 }
+];
 
