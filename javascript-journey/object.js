@@ -163,4 +163,17 @@ const students = [
     { name: "Rohit", marks: 85 },
     { name: "Karan", marks: 88 }
 ];
+let high = students[0]
 
+for (let index = 0; index < students.length; index++) {
+    const element = students[index];
+
+   if (element.marks > high.marks) {
+    high = element;
+    
+   } 
+   
+
+}
+console.log(high.marks);
+console.log(high.name);
