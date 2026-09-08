@@ -71,3 +71,59 @@ for (let index = 1; index < words.length; index++) {
 }
 
 console.log(longestWord);
+
+// Q3. Given an array of student objects, where each student has a name and marks, find and print the student who has the highest marks and the student who has the lowest marks. Count the students who scored 80 or above. Print the names of students who scored 80 or above.
+
+const students = [
+    { name: "Rahul", marks: 78 },
+    { name: "Aman", marks: 92 },
+    { name: "Rohit", marks: 85 },
+    { name: "Karan", marks: 88 }
+];
+
+let highest = students[0];
+let lowest = students[0];
+let count = 0;
+
+
+for (let index = 0; index < students.length; index++) {
+
+    const element = students[index];
+
+    console.log(element.name);
+
+    if (element.marks > highest.marks) {
+        highest = element;
+    }
+
+    if (element.marks < lowest.marks) {
+        lowest = element;
+    }
+
+
+    if (element.marks >= 80) {
+        count++;
+    }
+}
+
+console.log("Highest:", highest.name, highest.marks);
+console.log("Lowest:", lowest.name, lowest.marks);
+
+console.log("80 or above:", count);
+
+console.log("Students who scored 80 or above:");
+
+for (let index = 0; index < students.length; index++) {
+
+    const element = students[index];
+
+    if (element.marks >= 80) {
+        console.log(element.name);
+    }
+}
+
+
+
+// Q4. Given an array of product objects, where each product has a name, price, and quantity, calculate and print the total number of items and the total cart price.
+
+// Q5. Given an array of employee objects, where each employee has a name, age, and salary, find and print the employee with the highest salary, lowest salary, and the average salary.
