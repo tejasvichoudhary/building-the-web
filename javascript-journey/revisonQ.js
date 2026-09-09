@@ -159,6 +159,9 @@ let employees = [
 
 let highestt = employees[0];
 let lowestt = employees[0];
+let totalsalary = 0;
+let avarage = 0;
+
 
 for (let index = 0; index < employees.length; index++) {
     const element = employees[index];
@@ -168,7 +171,11 @@ for (let index = 0; index < employees.length; index++) {
     if (element.salary < lowestt.salary ) {
         lowestt = element;
     }
+    totalsalary += element.salary
+    avarage = totalsalary / employees.length;
 }
+console.log(avarage)
+console.log(totalsalary);
 console.log(highestt);
 console.log(lowestt);
 
