@@ -126,4 +126,26 @@ for (let index = 0; index < students.length; index++) {
 
 // Q4. Given an array of product objects, where each product has a name, price, and quantity, calculate and print the total number of items and the total cart price.
 
-// Q5. Given an array of employee objects, where each employee has a name, age, and salary, find and print the employee with the highest salary, lowest salary, and the average salary.
+let products = [ 
+    { name: "Toffee", price: 5, quantity: 10 },
+    { name: "Chips", price: 20, quantity: 3 },
+    { name: "Juice", price: 30, quantity: 2 }, 
+    { name: "Biscuit", price: 10, quantity: 5 }
+     ];
+
+     let total = 0;
+    let totalItems = 0;
+
+
+    for (let index = 0; index < products.length; index++) {
+             element = products[index];
+    
+             total += element.price * element.quantity;
+             totalItems += element.quantity;
+    }
+    console.log(element.name)
+    console.log(total);
+    console.log(totalItems)
+
+
+
