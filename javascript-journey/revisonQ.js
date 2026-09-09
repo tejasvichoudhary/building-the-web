@@ -147,5 +147,30 @@ let products = [
     console.log(total);
     console.log(totalItems)
 
+// Q5. Given an array of employee objects, where each employee has a name, age, and salary, find and print the employee with the highest salary, lowest salary, and the average salary.
+
+let employees = [
+    { name: "Rahul", age: 25, salary: 45000 },
+    { name: "Aman", age: 30, salary: 60000 },
+    { name: "Priya", age: 28, salary: 52000 },
+    { name: "Neha", age: 24, salary: 40000 },
+    { name: "Arjun", age: 32, salary: 75000 }
+];
+
+let highestt = employees[0];
+let lowestt = employees[0];
+
+for (let index = 0; index < employees.length; index++) {
+    const element = employees[index];
+    if (element.salary > highestt.salary ) {
+        highestt = element.salary;
+    }
+    if (element.salary < lowestt.salary ) {
+        lowestt = element;
+    }
+}
+console.log(highestt);
+console.log(lowestt);
+
 
 
