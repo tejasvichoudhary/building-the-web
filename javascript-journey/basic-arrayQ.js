@@ -60,8 +60,8 @@ for (let index = 0; index < arry.length; index++) {
 }
 }
 
-console.log(even)
-console.log(even)
+console.log(even);
+console.log(odd);
 
 // Q6 — Reverse an Array const arr = [1, 2, 3, 4, 5].
 
@@ -89,16 +89,20 @@ for (let index = 0; index < ar.length; index++) {
 const arrr = [10, 40, 20, 50, 30];
 
 let largestn = arrr[0];
-    let secondlargest = arrr[0];
+let secondlargest = -Infinity;
 
-for(let index = 0; index < arrr.length; index++ ){
+for (let index = 1; index < arrr.length; index++) {
 
     if (arrr[index] > largestn) {
-       secondlargest = largestn;
+        secondlargest = largestn;
         largestn = arrr[index];
+    } 
+    else if (arrr[index] > secondlargest && arrr[index] !== largestn) {
+        secondlargest = arrr[index];
     }
 }
-console.log(secondlargest)
+
+console.log(secondlargest);
 
 
 // Q9 — Remove Duplicate Elements const arr = [1, 2, 2, 3, 4, 4, 5].
@@ -108,7 +112,7 @@ const ary = [1, 2 ,2, 3, 4, 4, 5];
 let unique = [];
 
 for (let index = 0; index < ary.length; index++) {
-   unique.includes(ary[index])
+    
    if (unique.includes(ary[index]) === false )
     unique.push(ary[index])
     
