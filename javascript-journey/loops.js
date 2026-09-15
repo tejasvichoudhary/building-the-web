@@ -84,38 +84,46 @@ while (m <= 64) {
 
 // Question-6:  WAP to Develop a do-while loop for a simple number guessing game. Ask the user to guess a number between 1 and 10, and keep prompting until they guess correctly.
 
-// let correctnumber = 5;
+let correctnumber = 5;
 let guessingnumber;
 
-do{
- guessingnumber = parseInt(prompt("Enter a number"));
- if(guessingnumber === correctnumber) {
-    console.log(`correct`)
- } else {
-    console.log(`wrong`)
- }
+do {
+    guessingnumber = parseInt(prompt("Enter a number"));
+
+    if (guessingnumber === correctnumber) {
+        console.log("correct");
+    } else {
+        console.log("wrong");
+    }
+
 } while (guessingnumber !== correctnumber);
 
 
-let correctnumber = Math.floor(Math.random() * 10)+ 1;
-    // let guessingnumber;
-do{
-     guessingnumber = parseInt(prompt("Enter a number"));
-} 
-while (guessingnumber !== correctnumber)
 
-    alert("You guessed it!");
+let correctnumber = Math.floor(Math.random() * 10) + 1;
+let guessingnumber;
+
+do {
+    guessingnumber = parseInt(prompt("Enter a number"));
+
+} while (guessingnumber !== correctnumber);
+
+alert("You guessed it!");
+                   
 
 
 console.log("Guess a number between 1 to 10 :)");
-    // let guessingnumber;
 
-    do {
-number = parseInt(prompt("Enter a number: "));
-if (number === 5) {
-console.log("Guess Correctly");
-break;
-}
+let number; 
+
+do {
+    number = parseInt(prompt("Enter a number: "));
+
+    if (number === 5) {
+        console.log("Guess Correctly");
+        break;
+    }
+
 } while (number !== 5);
 
 // Question-7: WAP to display the multiplication table (1 to 10) in the console.
@@ -138,7 +146,7 @@ const product = i * j;
 console.log(`${i} x ${j} = ${product}`);
 }
 
-console.log('--------------------'); // Separator between tables
+console.log('------------'); // Separator between tables
 }
 
 let n = 1;

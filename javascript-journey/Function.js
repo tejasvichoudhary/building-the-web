@@ -3,7 +3,7 @@
 function first (name){
     console.log(`hello, ${name}`);
 }
-frist("tejasvi");
+first("tejasvi");
 
 // Question-2:  Write a function that takes two parameters, adds them together, and returns the result.
 
