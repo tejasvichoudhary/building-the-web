@@ -53,3 +53,50 @@ for (let index = 0; index < countword.length; index++) {
 }
 
 console.log(obj)
+
+// Q3. Swap keys and values of object
+
+let swap = { a: "x", b: "y", c: "z" }
+
+let object = Object.fromEntries(
+    Object.entries(swap).map(([key, value]) => [value, key])
+);
+ 
+console.log(object)
+
+// Two way of doing
+
+// let object = {}
+
+for (let key in swap) {
+    let value = swap[key]
+    object[value] = key
+}
+
+// Q4. Find the largest value key
+
+let largest = { a: 10, b: 50, c: 20 }
+
+
+let maxValue = object.value(largest)
+let maxKey = object.key(largest)
+
+for (let key in largest) {
+
+    if (largest[key] > maxValue) {
+
+        maxValue = largest[key];
+        maxKey = key;
+    }
+}
+
+console.log(maxKey);
+
+// Q5.Flatten object of arrays into one array
+
+ let flatten = { fruits: ["apple", "banana"], veggies: ["carrot", "pea"] }
+
+let result = Object.values(flatten).flat()
+
+console.log(result)
+
