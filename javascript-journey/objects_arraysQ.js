@@ -100,3 +100,25 @@ let result = Object.values(flatten).flat()
 
 console.log(result)
 
+// Q6. Group people by city
+
+let city = [
+  { name: "A", city: "Delhi" },
+  { name: "B", city: "Mumbai" },
+  { name: "C", city: "Delhi" }
+]
+
+let group = {};
+
+for (let index = 0; index < city.length; index++) {
+
+    let element = city[index];
+
+    if (!group[element.city]) {
+        group[element.city] = [];
+    }
+
+    group[element.city].push(element.name);
+}
+
+console.log(group);
