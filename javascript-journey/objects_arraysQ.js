@@ -122,3 +122,23 @@ for (let index = 0; index < city.length; index++) {
 }
 
 console.log(group);
+
+// Q7. Filter object by values > 50
+
+ let filter = { a: 20, b: 60, c: 40, d: 90 };
+
+let result = {};
+
+let obje = Object.entries(filter);
+
+for (let i = 0; i < obje.length; i++) {
+
+    if (obje[i][1] > 50) {
+        result[obje[i][0]] = obje[i][1];
+    }
+
+}
+
+console.log(result);
+
+
