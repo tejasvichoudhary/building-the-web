@@ -141,4 +141,30 @@ for (let i = 0; i < obje.length; i++) {
 
 console.log(result);
 
+// Q8. Find student with highest average mark
 
+ let studentmarks = {
+    A: [80, 90], 
+    B: [70, 75, 85]
+ }
+
+let average = Object.entries(studentmarks)
+
+
+let highest = 0;
+let highestStudent = ""
+ for (let index = 0; index < average.length; index++) {
+    const element = average[index];
+    let total = 0
+    for (let i = 0; i < element.length; i++) {
+       total+= element[i]
+        
+    }
+    let avg = total / element.length
+    if (avg > highest) {
+    highest = avg
+    highestStudent = element[0]
+}
+
+ }
+ console.log(highestStudent)
