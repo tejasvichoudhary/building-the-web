@@ -168,3 +168,54 @@ let highestStudent = ""
 
  }
  console.log(highestStudent)
+
+//  Q9. Unique values across all object arrays
+
+ let val = { 
+    x: [1,2,3],
+    y: [2,3,4], 
+    z: [4,5]
+     }
+
+     let key = Object.values(val);
+
+     let arr = []
+
+    for (let index = 0; index < key.length; index++) {
+        const element = key[index];
+       for (let i = 0; i < element.length; i++) {
+       if (!arr.includes(element[i])) {
+
+            arr.push(element[i]);
+        }
+        
+       }
+    }
+    console.log(arr);
+
+    // Q10. Pick only given keys from object
+
+    let object = { 
+        name: "Rahul",
+         age: 23,
+         city: "Noida"
+         }
+
+    let keys = ["name", "city"];
+    let obj = {};
+    for (let index = 0; index < keys.length; index++) {
+        const element = keys[index];
+        obj[element] = object[element];
+        
+    }
+    console.log(obj);
+    
+
+   
+
+
+
+
+    
+ 
+ 
