@@ -266,6 +266,33 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(arr);
 
+// Q13. Count number of keys in object
+
+let count = { a: 1, b: 2, c: 3 }
+
+let total = 0
+let keys = Object.keys(count);
+
+for (let index = 0; index < keys.length; index++) {
+    total += 1;
+}
+console.log(total);
+
+// Q13. Capitalize string values inside object
+
+let capi = { name: "alice", city: "delhi" };
+
+let keys = Object.keys(capi);
+let obj = {};
+
+for (let index = 0; index < keys.length; index++) {
+    obj[keys[index]] = capi[keys[index]].toUpperCase();
+}
+
+console.log(obj);
+
+
+
 
 
 
