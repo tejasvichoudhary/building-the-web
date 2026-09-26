@@ -291,6 +291,28 @@ for (let index = 0; index < keys.length; index++) {
 
 console.log(obj);
 
+// 15. Convert object to query string 
+
+ let str = { name: "Alice", age: 25 }
+
+ let convert = object.entries(str);
+ let result = "";
+
+ for (let index = 0; index < convert.length; index++) {
+    const element = convert[index];
+    if (index > 0) {
+    result += "&";
+}
+ result += element[0] + "=" + element[1]
+ }
+ console.log(result);
+ 
+
+
+
+
+
+
 
 
 
