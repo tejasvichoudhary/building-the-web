@@ -307,6 +307,86 @@ console.log(obj);
  }
  console.log(result);
  
+//  Q16. Count even and odd numbers in array
+
+let arr = [1,2,3,4,5,6];
+
+// { even: 3, odd: 3 }
+
+let obj = { 
+    even : 0,
+    odd : 0
+}
+
+
+for (let index = 0; index < arr.length; index++) {
+    const element = arr[index];
+
+    if (element  %  2 === 0) {
+        obj.even += 1
+    } else{
+      obj.odd +=1
+    }
+}
+
+console.log(obj);
+
+// Q17. Find common keys between two objects
+
+let obj1 = { a: 1, b: 2, c: 3 };
+let obj2 = { b: 4, c: 5, d: 6 };
+
+// ["b","c"]
+
+let keys1 = Object.keys(obj1);
+let keys2 = Object.keys(obj2);
+let common = [];
+for (let index = 0; index < keys1.length; index++) {
+    const element = keys1[index];
+
+    if (keys2.includes(element)) {
+    common.push(element);
+
+    } 
+}
+console.log(common);
+
+//  Q18. Convert array of objects to lookup by id 
+
+ let arr1 =[{ id: 1, name: "A" }, { id: 2, name: "B" }]
+
+// { 1: { id:1, name:"A" }, 2: { id:2, name:"B" } }
+
+let obj4 = {};
+
+for (let index = 0; index < arr1.length; index++) {
+    const element = arr1[index];
+    obj4[element.id] = element
+}
+console.log(obj4);
+
+// Q19. Check if all values in object are numbers
+
+let object1 = { a: 1, b: "hello", c: 3 }
+
+let array1 = Object.values(object1)
+let result = true;
+
+for (let index = 0; index < array1.length; index++) {
+    const element = array1[index];
+
+    if (typeof  element !== "number") {
+       result = false
+    } 
+    
+}
+console.log(result);
+
+
+
+
+
+
 
 
 
