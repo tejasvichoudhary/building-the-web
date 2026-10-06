@@ -21,3 +21,114 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(obj);
+
+// Q2. Transform API response to object (id → name)
+// { 1: "Alice", 2: "Bob" }
+
+let arr1 = [
+    { id: 1, name: "Alice" },
+    { id: 2, name: "Bob" }
+];
+
+let obj1 = {};
+
+for (let i = 0; i < arr1.length; i++) {
+
+    const element = arr1[i];
+
+    obj1[element.id] = element.name;
+}
+
+console.log(obj1);
+
+// Q3.Remove falsy values from object
+// { c: "hello", e: 5 }
+
+
+let object ={ 
+    a: 0,
+    b: null,
+    c: "hello",
+    d: undefined,
+    e: 5
+}
+
+let arr2 = Object.entries(object)
+obj2 = {};
+
+for (let i = 0; i < arr2.length; i++) {
+    const element = arr2[i];
+    if (element[1]) {
+         obj2[element[0]] = element[1]; 
+    }
+}
+console.log(obj2);
+
+// Q4.Check for permissions from roles 
+// false
+
+let roles = {
+    admin: ["read", "write"],
+    user: ["read"],
+    staff: ["write"]
+};
+
+let checkRole = "user";
+let action = "write";
+
+console.log(roles[checkRole].includes(action));
+
+// Q5. Transform array of orders into revenue per category
+// { electronics: 300, clothes: 50 }
+
+let arr3 = [
+    { id: 1, category: "electronics", price: 100 },
+    { id: 2, category: "clothes", price: 50 },
+    { id: 3, category: "electronics", price: 200 }
+];
+
+let obj3 = {};
+
+for (let i = 0; i < arr3.length; i++) {
+
+    const element = arr3[i];
+
+    if (!obj3[element.category]) {
+        obj3[element.category] = element.price;
+    } else {
+        obj3[element.category] += element.price;
+    }
+}
+
+console.log(obj3);
+
+// Q6. Remove duplicate objects by id
+// [
+//   { id: 1, name: "A" },
+//   { id: 2, name: "B" }
+// ]
+
+
+
+let arr4 = [
+    { id: 1, name: "A" },
+    { id: 2, name: "B" },
+    { id: 1, name: "A" }
+];
+
+let arry = [];
+let result = [];
+
+for (let i = 0; i < arr4.length; i++) {
+
+    const element = arr4[i];
+
+    if (!arry.includes(element.id)) {
+
+        result.push(element);
+        arry.push(element.id);
+
+    }
+}
+
+console.log(result);
