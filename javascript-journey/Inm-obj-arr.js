@@ -132,3 +132,42 @@ for (let i = 0; i < arr4.length; i++) {
 }
 
 console.log(result);
+
+// Q7. Chunk object entries into groups of size
+
+let obj4 = { a: 1, b: 2, c: 3, d: 4 }
+//  size = 2
+// [ [["a",1],["b",2]], [["c",3],["d",4]] ]
+
+
+let arr5 = Object.entries(obj4)
+let array1 = []
+
+for (let i = 0; i < arr5.length; i += 2) {
+    const element = arr5[i]
+    const second = arr5[i + 1]
+
+    array1.push([element, second])
+}
+
+console.log(array1)
+
+// Q7i. Find longest string among object values
+
+
+let obj6 = { a: "apple", b: "banana", c: "kiwi" }
+
+let long = 0;
+let longest = "";
+
+for (let i = 0; i < arrr.length; i++) {
+    const element = arrr[i];
+
+    if (element.length > long) {
+        long = element.length;
+        longest = element;
+    }
+}
+
+console.log(longest);
+
