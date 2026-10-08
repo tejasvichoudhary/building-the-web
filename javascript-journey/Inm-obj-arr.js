@@ -171,3 +171,47 @@ for (let i = 0; i < arrr.length; i++) {
 
 console.log(longest);
 
+// Q8. Convert the object where languages are the top-level keys, and inside each are translation strings by key into an object where translation keys are the top-level keys, and inside each you store values per language [HARD**]
+
+let objs = {
+  en: { 
+    hello: "Hello",
+    bye: "Goodbye"
+     },
+  fr: {
+     hello: "Bonjour",
+     bye: "Au revoir" },
+  es: 
+  { hello: "Hola" }
+}
+
+// {
+//   hello: { en: "Hello", fr: "Bonjour", es: "Hola" },
+//   bye: { en: "Goodbye", fr: "Au revoir" }
+// }
+
+let myarr = Object.entries(objs)
+
+let myobj = {}
+
+for (let i = 0; i < myarr.length; i++) {
+    const element = myarr[i];
+
+    let myarr1 = Object.entries(element[1]);
+
+    for (let j = 0; j < myarr1.length; j++) {
+        const item = myarr1[j];
+
+        if (!myobj[item[0]]) {
+            myobj[item[0]] = {};
+        }
+        myobj[item[0]][element[0]] = item[1];
+    }
+}
+
+console.log(myobj);
+
+
+
+
+
