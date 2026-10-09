@@ -211,6 +211,29 @@ for (let i = 0; i < myarr.length; i++) {
 
 console.log(myobj);
 
+// Q9. Build index of ids grouped by category
+
+let objs = [
+  { id: 1, category: "fruit" },
+  { id: 2, category: "veggie" },
+  { id: 3, category: "fruit" }
+]
+
+// { fruit: [1,3], veggie: [2] }
+
+let myobj = {}
+
+for (let i = 0; i < objs.length; i++) {
+    const element = objs[i];
+
+        if (!myobj[element.category]) {
+        myobj[element.category] = [];
+}
+myobj[element.category].push(element.id);
+    
+    }
+
+console.log(myobj);
 
 
 
