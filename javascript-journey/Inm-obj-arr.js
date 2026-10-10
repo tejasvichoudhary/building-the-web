@@ -235,6 +235,55 @@ myobj[element.category].push(element.id);
 
 console.log(myobj);
 
+// Q10. Remove deeply nested key from object 
 
+let myobject = { a: { b: { c: 1, d: 2 } } } 
+// remove "c"
 
+// { a: { b: { d: 2 } } }
 
+    delete objs.a.b.c;
+
+    console.log(objs)
+
+    // Q11. Check if two objects are deeply equal
+
+    
+let myobjects = { a: { x: 1, y: 2 } };
+let myobjects1 = { a: { x: 1, y: 2 } };
+
+let arr = Object.entries(myobjects);
+let arr1 = Object.entries(myobjects1);
+
+let result = true;
+
+if (arr.length !== arr1.length) {
+    result = false;
+}
+
+for (let i = 0; i < arr.length && result; i++) {
+    if (arr[i][0] !== arr1[i][0]) {
+        result = false;
+        break;
+    }
+
+    let nested = Object.entries(arr[i][1]);
+    let nested1 = Object.entries(arr1[i][1]);
+
+    if (nested.length !== nested1.length) {
+        result = false;
+        break;
+    }
+
+    for (let j = 0; j < nested.length; j++) {
+        if (
+            nested[j][0] !== nested1[j][0] ||
+            nested[j][1] !== nested1[j][1]
+        ) {
+            result = false;
+            break;
+        }
+    }
+}
+
+console.log(result)
