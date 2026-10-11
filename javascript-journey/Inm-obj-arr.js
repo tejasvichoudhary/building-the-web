@@ -287,3 +287,77 @@ for (let i = 0; i < arr.length && result; i++) {
 }
 
 console.log(result)
+
+// Q12. Deep flatten nested arrays inside object
+
+let arrismy = { a: [1, [2, [3]]], b: [4, [5]] }
+
+// { a: [1,2,3], b: [4,5] }
+
+let conv = Object.entries(arrismy)
+let objec = {}
+
+for (let i = 0; i < conv.length; i++) {
+    const element = conv[i];
+
+   objec[element[0]] = element[1].flat(Infinity)}
+console.log(objec);
+
+// Q13. Find most repeated word across categories
+
+let fruobj = { 
+    fruits: ["apple","apple","banana"],
+    drinks: ["apple","tea"] 
+    }
+
+    // apple
+
+let arrfru = Object.entries(fruobj)
+let frequency = {};
+ 
+for (let i = 0; i < arrfru.length; i++) {
+    const element = arrfru[i];
+
+    for (let j = 0; j < element[1].length; j++) {
+       const item = element[1][j];
+           frequency[item] = (frequency[item] || 0) + 1;
+        }
+    }
+    let fre = Object.entries(frequency)
+    let maxcount = 0;
+    let srt = ""
+    for(i = 0; i < fre.length; i++){
+        if (fre[i][1] > maxcount) {
+        maxcount = fre[i][1];
+        str = fre[i][0];
+    }
+}
+
+console.log(str);
+
+// Q14. Find intersection of all arrays in object 
+
+let allobj = { a: [1,2,3], b: [2,3,4], c: [3,4,5] }
+
+// [3]
+
+let allarr = Object.values(allobj);
+let emptyarr = []
+
+for (let i = 0; i < allarr.length; i++) {
+    const element = allarr[i];
+    for (let j = 0; j < element.length; j++) {
+        const item = element[j];
+        if (
+    allarr[0].includes(item) &&
+    allarr[1].includes(item) &&
+    allarr[2].includes(item)
+) {
+    if (!emptyarr.includes(item)) {
+   emptyarr.push(item);
+}
+ }
+  }
+   }
+
+console.log(emptyarr);
