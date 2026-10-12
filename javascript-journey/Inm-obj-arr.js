@@ -361,3 +361,23 @@ for (let i = 0; i < allarr.length; i++) {
    }
 
 console.log(emptyarr);
+
+// Q15. Deep merge two nested objects
+
+let objone = {a: { x: 1, y: 2 } }
+let onjtwo = { a: { y: 3, z: 4 } }
+
+// { a: { x: 1, y: 3, z: 4 } }
+
+let result = {
+    a: {
+        ...objone.a,
+        ...objtwo.a
+    }
+};
+
+console.log(result);
+
+
+
+
