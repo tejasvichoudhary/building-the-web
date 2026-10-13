@@ -375,9 +375,50 @@ let result = {
         ...objtwo.a
     }
 };
-
 console.log(result);
 
+// Q16. Nested object destructuring
 
+let multobj = { user: { profile: { name: "Alice", age: 25 } } }
 
+// Alice 25
 
+let {
+    user: {
+        profile: { name, age }
+    }
+} = multobj;
+
+console.log(name); 
+console.log(age);  
+
+// Q17. Find top N keys by value
+
+let twoobj= { a: 10, b: 50, c: 30, d: 40 }
+//  N=2
+// ["b","d"]
+
+let arr = Object.entries(twoobj);
+
+let first = -Infinity;
+let second = -Infinity;
+let firstKey;
+let secondKey;
+
+for (let i = 0; i < arr.length; i++) {
+    let key = arr[i][0];
+    let value = arr[i][1];
+
+    if (value > first) {
+        second = first;
+        secondKey = firstKey;
+
+        first = value;
+        firstKey = key;
+    } else if (value > second) {
+        second = value;
+        secondKey = key;
+    }
+}
+
+console.log([firstKey, secondKey]);
