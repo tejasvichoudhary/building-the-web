@@ -422,3 +422,72 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log([firstKey, secondKey]);
+
+// Q18. Sort array of objects by name then age
+
+let sortarr = [
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 },
+  { name: "Alice", age: 22 }
+]
+
+for (let i = 0; i < sortarr.length; i++) {
+    for (let j = i + 1; j < sortarr.length; j++) {
+        if (sortarr[i].name > sortarr[j].name) {
+            let temp = sortarr[i];
+            sortarr[i] = sortarr[j];
+            sortarr[j] = temp;
+        }
+    }
+}
+
+console.log(sortarr);
+
+// Q19. Reconcile two lists (missing + extra items)
+
+ expected:["a","b","c"]
+actual:["b","c","d"]
+
+// { missing:["a"], extra:["d"] }
+
+let expected = ["a", "b", "c"];
+let actual = ["b", "c", "d"];
+
+let result = {
+    missing: [],
+    extra: []
+};
+for (let i = 0; i < expected.length; i++) {
+    if (!actual.includes(expected[i])) {
+        result.missing.push(expected[i]);
+    }
+}
+for (let i = 0; i < actual.length; i++) {
+    if (!expected.includes(actual[i])) {
+        result.extra.push(actual[i]);
+    }
+}
+
+console.log(result);
+
+// Q20. Merge two objects (no sum, override second)
+
+let obj1 = { a: 10, b: 20 };
+let obj2 = { a: 5, c: 15 };
+
+let arr1 = Object.entries(obj1);
+let arr2 = Object.entries(obj2);
+
+let result = {};
+
+for (let i = 0; i < arr1.length; i++) {
+    let element = arr1[i];
+    result[element[0]] = element[1];
+}
+
+for (let i = 0; i < arr2.length; i++) {
+    let element = arr2[i];
+    result[element[0]] = element[1];
+}
+
+console.log(result);
